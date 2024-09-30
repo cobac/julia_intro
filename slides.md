@@ -13,6 +13,7 @@
 - As composable and elegant as cool languages (Lisp).
 - As good as a developer UX as Rust.
   - Package manager.
+  - Native testing infrastructure.
   - LSP server.
   - Linters, formatters.
 - As easy to learn as Python.
