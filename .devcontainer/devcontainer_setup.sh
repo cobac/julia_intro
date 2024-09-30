@@ -1,1 +1,1 @@
-echo "hey"
+julia launch.jl
