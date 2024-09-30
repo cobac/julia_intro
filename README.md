@@ -1,3 +1,5 @@
+![julia logo](assets/julia.png)
+
 # Introduction to Julia
 
 - [Slides](slides.md)
