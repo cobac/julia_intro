@@ -2,3 +2,6 @@ name = "julia_intro"
 uuid = "8bbe680f-4ae4-4303-bff9-0fef52fe3a7f"
 authors = ["David Coba <coba@cobac.eu>"]
 version = "0.1.0"
+
+[deps]
+Pluto = "c3e4b0f8-55cb-11ea-2926-15256bba5781"
