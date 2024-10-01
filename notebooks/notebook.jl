@@ -36,12 +36,12 @@ xd = x * " " * "Data"
 md"## Type system fundamentals"
 
 # ╔═╡ 51d145a0-a08a-4dc0-af51-4c4274659615
-md"For multiline code expressions you can use `begin` blocks. Julia uses the `end` keyword to define blocks."
+md"""For multiline code expressions you can use `begin` blocks. Julia uses the `end` keyword to define blocks."""
 
 # ╔═╡ 2760f6f0-546a-4df6-9452-7ba2d6e604ff
 begin
 	  # Type definitions
-	  abstract type Animal end
+abstract type Animal end
 struct Dog <: Animal end
 struct Cat <: Animal end
 
@@ -57,6 +57,9 @@ sound(dog::Dog, nationality::Dutch) = print("woefwoef")
 sound(cat::Cat) = print("miau")
 sound(cat::Cat, nationality::Nationality) = print("Workers of the world, unite!")
 end
+
+# ╔═╡ b58ce879-2b4e-4ccf-95fc-6fb7b0b2ab70
+md"Types in Julia ar organized in a tree, where leaf types are always concrete types and other nodes are all abstract types. You can also [parameteize](https://docs.julialang.org/en/v1/manual/types/#Parametric-Types) concrete and abstract types."
 
 # ╔═╡ 40450609-1130-4711-98d8-f00ed6bc16ed
 md"In the expression above we are dispatching on the types of different objects. But we can also dispatch on the *types* themselves:"
@@ -150,7 +153,7 @@ md"""[...including differential equation systems and neural networks](https://do
 md"### Differential equations"
 
 # ╔═╡ a77345bc-93e0-4ec4-b355-9f7078b47f33
-# begin
+begin
 #     using DifferentialEquations
 #     using Plots
 # 
@@ -165,7 +168,7 @@ md"### Differential equations"
 #     prob = ODEProblem(lorenz!, u0, tspan)
 #     sol = solve(prob)
 #     plot(sol, idxs = (1, 2, 3))
-# end
+end
 
 
 # ╔═╡ 1883996e-7aaf-4d1f-af02-a7719630b8ec
@@ -1381,8 +1384,9 @@ version = "1.4.1+1"
 # ╟─4255e54f-8fd4-4f18-b1fb-d46653321b39
 # ╠═270f1760-689b-4a94-9903-da0bb050492f
 # ╟─224fb876-931a-45fa-aad4-08c579c5846d
-# ╟─51d145a0-a08a-4dc0-af51-4c4274659615
+# ╠═51d145a0-a08a-4dc0-af51-4c4274659615
 # ╠═2760f6f0-546a-4df6-9452-7ba2d6e604ff
+# ╟─b58ce879-2b4e-4ccf-95fc-6fb7b0b2ab70
 # ╟─40450609-1130-4711-98d8-f00ed6bc16ed
 # ╠═506a94a3-fc35-457d-a7ce-1177b05a900b
 # ╠═dec96452-7869-43fb-a21b-6b0f7cf3ae16
